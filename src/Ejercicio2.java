@@ -48,16 +48,15 @@ public class Ejercicio2 {
      * @return una lista de duplas con la frecuencia de cada numero.
      */
     public List<Dupla<Integer>> frecuenciaRecursivo(int[] arregloX) {
-        int contador = 0;
         List<Integer> elementos = new ArrayList<Integer>();
         List<Integer> repeticiones = new ArrayList<Integer>();
-        return auxFrecuenciaRecursiva(arregloX, contador, elementos, repeticiones);
+        return auxFrecuenciaRecursiva(arregloX, 0, elementos, repeticiones);
     }
 
     /* Calcula la frecuencia de cada numero de un arreglo X. */
     private List<Dupla<Integer>> auxFrecuenciaRecursiva(int[] arregloX, int contador,
     List<Integer> elementos, List<Integer> repeticiones) {
-        if (contador >= arregloX.length) {
+        if (contador == arregloX.length) {
             List<Dupla<Integer>> frecuencias = new ArrayList<Dupla<Integer>>();
             return generarFrecuencias(elementos, repeticiones, frecuencias);
         } else {

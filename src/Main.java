@@ -11,7 +11,7 @@ public class Main {
 
     /* Realiza la ejecucion del ejercicio 2 de forma iterativa y recursiva. */
     private static void ejercicio2() {
-        int[] arregloX = {12, 43, 12, 1, 10, 1, 34, -43, 10, 0, 12, 5, 5, 0, 17, 19, 12, 45};
+        int[] arregloX = {};
         System.out.println("Original:");
         System.out.println(imprimirArreglo(arregloX) + "\n");
         Ejercicio2 ejercicio2 = new Ejercicio2();

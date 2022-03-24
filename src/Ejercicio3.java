@@ -16,11 +16,9 @@ public class Ejercicio3 {
      * @return la suma de los primeros n numeros impares.
      */
     public int sumImparesIterativo(int n) {
-        int impar = 1;
         int suma = 0;
-        for (int i = 0; i < n; i++) {
-            suma = suma + impar;
-            impar = impar + 2;
+        for (int s = 1; s <= n; s++) {
+            suma = suma + ((s*2) - 1);
         }
         return suma;
     }
@@ -31,17 +29,11 @@ public class Ejercicio3 {
      * @return la suma de los primeros n numeros impares.
      */
     public int sumImparesRecursivo(int n) {
-        return auxSumRecursiva(n, 0, 1);
-    }
-
-    /* Suma de los primeros n numeros impares */
-    private int auxSumRecursiva(int n, int suma, int impar) {
-        if (n == 0) {
-            return suma;
+        if (n == 1) {
+            return 1;
         } else {
-            suma = suma + impar;
-            impar = impar + 2;
-            return auxSumRecursiva(n-1, suma, impar);
+            return ((2*n) - 1) + sumImparesRecursivo(n - 1);
         }
+        //return auxSumRecursiva(n, 0, 1);
     }
 }
