@@ -17,8 +17,8 @@ public class Ejercicio3 {
      */
     public int sumImparesIterativo(int n) {
         int suma = 0;
-        for (int s = 1; s <= n; s++) {
-            suma = suma + ((s*2) - 1);
+        for (int i = 1; i <= n; i++) {
+            suma = suma + ((i*2) - 1);
         }
         return suma;
     }
@@ -29,8 +29,8 @@ public class Ejercicio3 {
      * @return la suma de los primeros n numeros impares.
      */
     public int sumImparesRecursivo(int n) {
-        if (n == 1) {
-            return 1;
+        if (n == 0) {
+            return 0;
         } else {
             return ((2*n) - 1) + sumImparesRecursivo(n - 1);
         }
