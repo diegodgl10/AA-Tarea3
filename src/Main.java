@@ -7,6 +7,9 @@ public class Main {
 
         System.out.println("Ejercicio 3: \n");
         ejercicio3();
+
+        System.out.println("Ejercicio 4: \n");
+        ejercicio4();
     }
 
     /* Realiza la ejecucion del ejercicio 2 de forma iterativa y recursiva. */
@@ -30,6 +33,19 @@ public class Main {
         System.out.println("Recursivo: " + ejercicio3.sumImparesRecursivo(n) + "\n");
 
 
+    }
+
+    /* Realiza la ejecucion del ejercicio 4. */
+    private static void ejercicio4() {
+        int[] arregloA = {4,2,6,14,9,4,1,62,3,6,10};
+        int a = 1;
+        int b = 5;
+        int x = 9;
+        Ejercicio4 ejercicio4 = new Ejercicio4();
+        System.out.println("Original:");
+        System.out.println(imprimirArreglo(arregloA) + "\n");
+        System.out.println("a :" +a+ "   b :" +b+ "   x :" +x);
+        System.out.println("i :" + ejercicio4.metodoV(arregloA, a, b, x));
     }
 
     /* Regresa la representacion en cadena de un arreglo. */

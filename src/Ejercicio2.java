@@ -77,7 +77,7 @@ public class Ejercicio2 {
     /* Genera la lista de tuplas de frecuencias de aparicion de cada numero. */
     private List<Dupla<Integer>> generarFrecuencias(List<Integer> elementos,
     List<Integer> repeticiones, List<Dupla<Integer>> frecuencias) {
-        if (elementos.isEmpty()) {
+        if (elementos.size() == 0) {
             return frecuencias;
         } else {
             int elemento = elementos.get(0);

@@ -1,5 +1,6 @@
 /**
  * Considera el problema de calcular la suma de los primeros n n ́umeros impares positivo
+ * @author Zamora Cruz Diego Arturo
  */
 public class Ejercicio3 {
 
@@ -34,6 +35,5 @@ public class Ejercicio3 {
         } else {
             return ((2*n) - 1) + sumImparesRecursivo(n - 1);
         }
-        //return auxSumRecursiva(n, 0, 1);
     }
 }
